@@ -109,6 +109,7 @@ nav a {
 
 .bottom-navigation:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .contact-btn {
