@@ -1,0 +1,242 @@
+/* 
+font-family: Helvetica;
+font-size: 22px;
+color: seashell;
+background-color: black;
+opacity: 0.9;
+https://colorhunt.co/palettes/brown   alguna paleta de acá???
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap");
+
+/* 
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+styles: 400 Normal, 400 Italic, 700 Bold
+*/
+
+/**************** GENERAL STYLES ****************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* html {
+    font-size: 62.5%;
+} */
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fafafa;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 0.85rem;
+}
+
+h4,
+h5 {
+  font-family: "Raleway", sans-serif;
+}
+
+/**************** HEADER ****************/
+
+header {
+  background-color: #506d84;
+  height: 70px;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  margin-left: 10px;
+  height: 50px;
+}
+
+nav {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+nav li a,
+nav li a:visited,
+nav li a:hover,
+nav li a:active {
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 1.1rem;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+/**************** MAIN ****************/
+
+main {
+  margin-top: 70px;
+}
+
+/**************** OUR MISSION SECTION ****************/
+
+#our-mission {
+  background-image: url("../img/img-mission-background.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 90%;
+  margin: 0 auto;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#our-mission div {
+  background-color: #889eaf;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/**************** FEATURED TEA SECTION ****************/
+
+#featured-tea {
+  background-color: #6b4f4f;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+.featured-tea-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.featured-tea-text {
+  margin-bottom: 3%;
+}
+
+.tea-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tea-card {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tea-card img {
+  /* width: 100%; */
+  height: 200px;
+  width: 300px;
+  border-radius: 4%;
+}
+
+.tea-card h4 {
+  margin-top: 10px;
+}
+
+/**************** LOCATION SECTION ****************/
+
+#locations {
+  background-image: url("../img/img-locations-background.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 5%;
+  color: black;
+}
+
+#locations h2 {
+  text-align: center;
+}
+
+.location-card-container {
+  padding-top: 2%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.location-card {
+  background-color: #fafafa;
+  border: 2px solid #fafafa;
+  border-radius: 10px;
+  width: 300px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-bottom: 2%;
+}
+
+.location-card h3 {
+  margin-bottom: 6%;
+  text-decoration: underline;
+}
+
+.location-card h4 {
+  margin-bottom: 2%;
+}
+
+/**************** FOOTER ****************/
+
+footer {
+  background-color: #506d84;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.contact {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+footer h6 {
+  text-align: left;
+  margin-left: 20px;
+}
+
+/**************** MEDIA QUERIES ****************/
+
+@media only screen and (max-width: 680px) {
+  #locations {
+    height: 680px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .location-card {
+    width: 270px;
+  }
+}
