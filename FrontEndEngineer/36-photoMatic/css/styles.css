@@ -14,21 +14,160 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #EEEEEE;
+    text-align: center;
+}
+
 /*************** HEADER ***************/
 
+header{
+    width: 100%;
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    color:#4A4A4A;
+    line-height: 1.6;
+    background-color: #FAFAFA;
+}
 
+header h1 {
+    font-weight: 400;
+    letter-spacing: 3px;
+}
 
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 45px;
+}
+
+nav ul li a,
+nav ul li a:hover,
+nav ul li a:visited,
+nav ul li a:active {
+    text-decoration: none;
+    color:#4A4A4A;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+button {
+    border: none;
+}
+ i{
+     padding-left: 5px;
+     color: black;
+ }
 /*************** MAIN ***************/
 
 
 
 /*************** BANNER SECTION ***************/
 
+#banner {
+    background-image: url("../images/banner-landingpage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-top: 170px;
+    padding-bottom: 170px;
+    padding-left: 100px;
+}
+
+#banner div {
+    width: 568px;
+    color: white;
+    background-color: #9DC20A;
+    border: 1px solid #979797;
+    border-radius: 4px;
+    padding: 32px 80px 56px;
+}
+
+#banner div h3{
+    font-family: 'Italianno', cursive;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+#banner div h2{
+    font-family: 'Rubik', sans-serif;
+    font-size: 49px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+#banner div button {
+    width: 408px;
+    height: 64px;
+    background-color: #4A4A4A;
+    color: white;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-top: 26px;
+}
+
+#banner div button:hover {
+    background-color: #FAFAFA;
+    color: #4A4A4A;
+    border: 2px solid #4A4A4A;
+}
+
+#banner div button:active {
+    background-color: #EEEEEE;
+}
 
 
 /*************** PRODUCTS SECTION ***************/
 
+#product-detail {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 64px;
+    padding-bottom: 46px;
+    display: flex;
+    justify-content: space-between;
+}
 
+.product-card {
+    background-color: white;
+    color: #4A4A4A;
+    height: 635px;
+    width: 640px;
+    padding: 32px 32px 0px 32px;
+}
+
+.product-card img{
+    width: 100%;
+    height: 65%;
+}
+
+.product-card h3{
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 40px;
+}
+
+.product-card p {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
+}
 
 /*************** FILTERS SECTION ***************/
 
